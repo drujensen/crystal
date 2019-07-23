@@ -1,0 +1,1 @@
+cc 'crystal.o' -o 'bin/crystal' -Wall -rdynamic src/ext/sigfault.o -rdynamic src/llvm/ext/llvm_ext.o `/usr/bin/llvm-config-6.0 --libs --system-libs --ldflags 2> /dev/null` -lstdc++ -lpcre -lm -lgc -lpthread src/ext/libcrystal.a -levent -lrt -ldl -L/usr/lib -L/usr/local/lib
